@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation" app:startDestination="@id/Pra-Assesment">
+
+    <fragment android:id="@+id/Pra-Assesment" android:name="org.d3if4115.praassesment.MainFragment"
+              tools:layout="@layout/fragment_main" android:label="Pra-Assesment">
+        <action android:id="@+id/action_mainFragment_to_persegiPanjangFragment"
+                app:destination="@id/PersegiPanjang"/>
+        <action android:id="@+id/action_mainFragment_to_segitigaFragment" app:destination="@id/Segitiga"/>
+        <action android:id="@+id/action_mainFragment_to_tentangFragment" app:destination="@id/Tentang"/>
+    </fragment>
+    <fragment android:id="@+id/PersegiPanjang" android:name="org.d3if4115.praassesment.PersegiPanjangFragment"
+              android:label="Persegi Panjang"
+              tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment android:id="@+id/Segitiga" android:name="org.d3if4115.praassesment.SegitigaFragment"
+              android:label="Segitiga"
+              tools:layout="@layout/fragment_segitiga"/>
+    <fragment android:id="@+id/Tentang" android:name="org.d3if4115.praassesment.TentangFragment"
+              android:label="Tentang"
+              tools:layout="@layout/fragment_tentang"/>
+</navigation>
